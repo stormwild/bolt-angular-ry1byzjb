@@ -1,0 +1,29 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.dark-theme {
+  @import '@angular/material/prebuilt-themes/purple-green.css';
+  background-color: #303030;
+  color: white;
+  min-height: 100vh;
+}
+
+.dark-theme-card {
+  background-color: #424242 !important;
+  color: white !important;
+}
+
+mat-slide-toggle {
+  margin-left: 8px;
+}
+
+/* Remove checkmark and X from toggle */
+.mat-mdc-slide-toggle .mdc-switch::before,
+.mat-mdc-slide-toggle .mdc-switch::after {
+  display: none !important;
+}
